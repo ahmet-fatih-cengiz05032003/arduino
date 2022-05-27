@@ -20,6 +20,7 @@ void loop() {
 
 }
 int mesafe(int maxrange, int minrange){
+    
     long duration, distance;
     digitalWrite(trigPin,LOW);
     delayMicroseconds(2);
@@ -32,24 +33,17 @@ int mesafe(int maxrange, int minrange){
     delay(50);
 
     if(distance>= maxrange || distance <= minrange)
-    return 0;
+        return 0;
+    
     return distance;
 
 }
 
 int melodi( int dly){
 
-
-  tone(buzzerPin, 440);
-  delay(dly);
-  noTone(buzzerPin);
-  delay(dly);
+      tone(buzzerPin, 440);
+      delay(dly);
+      noTone(buzzerPin);
+      delay(dly);
+   
   }
-
-
-
-
-
-
-
-
