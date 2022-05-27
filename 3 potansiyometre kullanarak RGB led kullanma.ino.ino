@@ -12,11 +12,7 @@ void setup() {
   pinMode(red,OUTPUT);  
   pinMode(green,OUTPUT);
   pinMode(blue,OUTPUT);
-  
-  
-  
-    
-
+ 
 }
 
 void loop() {
@@ -32,13 +28,5 @@ void loop() {
   analogWrite(red,red_value);
   analogWrite(green,green_value);  
   analogWrite(blue,blue_value);  
-
-
-
-
-
-
-
-
   
   }
